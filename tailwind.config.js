@@ -1,0 +1,60 @@
+/** @type {import('tailwindcss').Config} */
+
+export default {
+  mode: "jit",
+  darkMode: "class",
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    screens: { md: { max: "1050px" }, sm: { max: "550px" } },
+    extend: {
+      colors: {
+        red: { 700: "#ec1d24" },
+        blue_gray: {
+          50: "#eaecf0",
+          100: "#cfd4dc",
+          200: "#b2b8db",
+          300: "#98a1b2",
+          500: "#667084",
+          700: "#475466",
+          800: "#344053",
+          900: "#1d2838",
+        },
+        light_blue: { 50: "#d1e9ff", 100: "#b2ddff" },
+        blue: {
+          300: "#53b0fd",
+          600: "#156fee",
+          800: "#175cd3",
+          A700: "#0052ff",
+          "800_61": "#175cd361",
+          A200: "#518bff",
+          A700_01: "#0061ff",
+          A700_02: "#004eea",
+          "600_01": "#3499cd",
+        },
+        light_green: { 300: "#acdb79", 500: "#95bf47", 800: "#5e8e3e" },
+        deep_purple: { 100: "#d6bbfb" },
+        gray: {
+          50: "#f8f9fb",
+          100: "#f2f3f6",
+          500: "#a6a6a6",
+          900: "#0f1728",
+          "900_0c": "#1018280c",
+          "900_23": "#0f172823",
+          "100_01": "#eff8ff",
+        },
+        black: { 900: "#000000", "900_01": "#010101" },
+        yellow: { 800: "#fcb022" },
+        deep_orange: { 300: "#ff9b65" },
+        pink: { 200: "#fea2b3" },
+        white: { A700_e5: "#ffffffe5", A700_01: "#fefefe", A700: "#ffffff" },
+        amber: { 300: "#fec84a" },
+      },
+      boxShadow: {
+        bs: "0px 1px  2px 0px #1018280c",
+        bs1: "0px 32px  64px -12px #0f172823",
+      },
+      fontFamily: { inter: "Inter" },
+    },
+  },
+  plugins: [],
+};
