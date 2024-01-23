@@ -173,17 +173,17 @@ const TalentsyncAssesementPage = () => {
                     <div className="flex flex-row gap-4 items-center justify-start w-auto">
                       <TalentsyncAssesementColumnavatarcontrast className="flex flex-col gap-2 items-start justify-start w-auto" />
                       <div className="flex flex-col gap-1 items-start justify-start w-auto">
-                        <div className="flex flex-row gap-2 items-center justify-start w-auto">
+                        <div className="flex flex-row gap-7 items-center justify-start w-auto">
                           <List
-                            className="sm:flex-col flex-row gap-1 grid grid-cols-5 justify-start w-auto"
+                            className="sm:flex-col flex-row gap-6 grid grid-cols-5 justify-start w-auto"
                             orientation="horizontal"
-                          >
+                           >
                             {new Array(5).fill({}).map((props, index) => (
                               <React.Fragment
                                 key={`TalentsyncAssesementStackstarbackground${index}`}
                               >
                                 <TalentsyncAssesementStackstarbackground
-                                  className="h-5 md:h-[19px] relative w-full"
+                                  className="h-5 md:h-[19px]  relative w-full"
                                   {...props}
                                 />
                               </React.Fragment>
@@ -517,7 +517,7 @@ const TalentsyncAssesementPage = () => {
                 alt="shopifycomsvg"
               />
               <List
-                className="sm:flex-col flex-row gap-1 grid grid-cols-5 justify-start w-auto"
+                className="sm:flex-col flex-row gap-6 grid grid-cols-5 justify-start w-auto"
                 orientation="horizontal"
               >
                 {new Array(5).fill({}).map((props, index) => (
